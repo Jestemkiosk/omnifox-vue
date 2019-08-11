@@ -34,7 +34,7 @@ export default {
         }
     },
     created(){
-        axios.get('http://localhost:5000/cities/')
+        axios.get('http://http://89.68.148.28/:5000/cities/')
         .then(res => {
         this.cities = res.data
         console.log(this.cities)

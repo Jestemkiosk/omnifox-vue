@@ -34,7 +34,7 @@ export default {
         }
     },
     created(){
-        axios.get('http://localhost:5000/foxes/')
+        axios.get('http://89.68.148.28/foxes/')
         .then(res => {
         this.foxes = res.data
         console.log(this.foxes)
