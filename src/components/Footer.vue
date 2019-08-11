@@ -10,8 +10,8 @@
           </div>
           <div class="col span-1-of-2">
             <ul class="social-nav">
-              <li><a href="/resume.pdf"><MdBriefcaseIcon class="ion-resume" title="My Resume"/></a></li>
               <li><a href="https://github.com/Jestemkiosk/omnifox-vue"><LogoGithubIcon class="ion-social-github" title="This project's Github Repository"/></a></li>
+              <li><a href="/resume.pdf"><MdBriefcaseIcon class="ion-resume" title="My Resume"/></a></li>
               <li><a href="https://www.fiverr.com/jestemkioskiem"><MdFolderOpenIcon class="ion-social-fiverr" title="My Fiverr Freelancer Profile"/></a></li>
             </ul>
           </div>
