@@ -3,8 +3,8 @@
           <figure class="fox-photo">
             <img :src="fox.image_url" alt="">
           </figure>
-          <h3 v-if="fox.gender === 'Male'">{{fox.name}} <MdMaleIcon /></h3>
-          <h3 v-else>{{fox.name}} <MdFemaleIcon /></h3>
+          <h3 v-if="fox.gender === 'Male'"><MdMaleIcon class="icon"/> {{fox.name}}</h3>
+          <h3 v-else><MdFemaleIcon class="icon"/> {{fox.name}}</h3>
           <ul>
             <li v-if="fox.city"><MdBusinessIcon class='icon-small'/>Residing in {{fox.city.name}}</li>
             <li v-else><MdBusinessIcon class='icon-small'/>No home city yet!</li>
@@ -55,6 +55,10 @@ i{
   color: #e67e22;
   padding-right: 10px;
   font-size: 1.3em;
+}
+
+.icon{
+  color: #e67e22;
 }
 
 .fox-photo{

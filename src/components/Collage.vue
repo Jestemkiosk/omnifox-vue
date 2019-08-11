@@ -1,5 +1,8 @@
 <template>
     <section class="section-foxes">
+        <div class="row">
+            <h4 class="all-foxes col span-1-of-1">Check out all of our foxes <a href="/foxes">here.</a></h4>
+        </div>
         <ul class="foxes-showcase clearfix">
             <li>
                 <figure class="fox-photo">
@@ -44,9 +47,6 @@
                 </figure>
             </li>
         </ul>
-        <div class="row">
-            <h4 class="all-foxes col span-1-of-1">Check out all of our foxes <a href="/foxes">here.</a></h4>
-        </div>
     </section>
 </template>
 

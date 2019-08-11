@@ -2,7 +2,7 @@
     <div>
         <FoxesHeader />
             <div class="foxes">
-                <h1>API Endpoint: http://localhost:5000/foxes</h1>
+                <h1>API Endpoint: http://api.wmetryka.pl/foxes/</h1>
                 <div class="row" v-bind:key="foxes.index" v-for="foxes in chunkedFoxes">
                     <Fox v-bind:fox="fox" v-bind:key="fox.id" v-for="fox in foxes"/>
                 </div>

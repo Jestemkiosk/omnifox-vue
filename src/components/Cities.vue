@@ -1,6 +1,6 @@
 <template>
 <div>
-    <section v-if="cities.length > 0" class="section-cities">
+    <section v-if="cities.length > 2" class="section-cities">
         <div class="row">
             <h2 class="col span-1-of-1"> We're currently in these cities</h2>
         </div>
@@ -8,11 +8,10 @@
             <City v-bind:city="city" v-bind:key="city.id" v-for="city in chunkedCities[0]"/>
         </div>
         <div class="row more-cities">
-            <h4 v-if="cities.length>4" class="col span-1-of-1">And {{cities.length-4}} more! Check the full list <a href="/cities">here!</a></h4>
-            <h4 v-else style="display: none"></h4>
+            <h4 class="col span-1-of-1">Check the full list <a href="/cities">here!</a></h4>
         </div>
     </section>
-    <div v-else>
+    <div v-else style="display: none">
     </div>
 </div>
 
@@ -30,6 +29,7 @@ export default {
     props: ["cities"],
     computed: {
         chunkedCities(){
+
             return chunk(this.cities, 4)
         }
     }

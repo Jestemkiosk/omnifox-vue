@@ -40,20 +40,22 @@ export default {
             ],
             cities:[
 
-            ]
+            ],
+            sortByKeyLength: function (array, key) {
+                return array.sort(function(a, b) {
+                    var x = a[key].length; var y = b[key].length;
+                    return ((x < y) ? -1 : ((x > y) ? 1 : 0)) * -1;
+                });
+            }
         }
     },
     created(){
         axios.get('http://89.68.148.28/cities/')
         .then(res => {
-        this.cities = res.data
-        })
-        .catch(err => console.log(err))
-
-        axios.get('http://89.68.148.28/foxes/')
-        .then(res => {
-        this.foxes = res.data
-        })
+        this.cities = this.sortByKeyLength(res.data, 'foxes')
+        console.log(this.cities)
+        
+        })  
         .catch(err => console.log(err))
     }
 };

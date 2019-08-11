@@ -2,7 +2,7 @@
     <div>
         <CitiesHeader />
             <div class="cities">
-                <h1>API Endpoint: http://localhost:5000/cities</h1>
+                <h1>API Endpoint: http://api.wmetryka.pl/cities</h1>
                 <div class="row" v-bind:key="cities.index" v-for="cities in chunkedCities">
                     <City v-bind:city="city" v-bind:key="city.id" v-for="city in cities"/>
                 </div>
@@ -30,14 +30,20 @@ export default {
         return{
             cities: [
 
-            ]
+            ],
+            sortByKeyLength: function (array, key) {
+                return array.sort(function(a, b) {
+                    var x = a[key].length; var y = b[key].length;
+                    return ((x < y) ? -1 : ((x > y) ? 1 : 0)) * -1;
+                });
+            }
         }
     },
     created(){
         axios.get('http://89.68.148.28/cities/')
         .then(res => {
-        this.cities = res.data
-        console.log(this.cities)
+        this.cities = this.sortByKeyLength(res.data, 'foxes')
+        
         })
         .catch(err => console.log(err))
     },
