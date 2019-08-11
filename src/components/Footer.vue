@@ -159,6 +159,11 @@ footer span{
       font-size: 0.6em;
     }
 
+    .footer-nav li{
+      display: inline-block;
+      margin-right: 6px;
+    }
+
 }
 
 </style>
