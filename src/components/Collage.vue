@@ -6,44 +6,44 @@
         <ul class="foxes-showcase clearfix">
             <li>
                 <figure class="fox-photo">
-                    <img src="../assets/1.jpg" alt="Barny">
+                    <img src="../assets/1.jpg">
                 </figure>
             </li>
             <li>
                 <figure class="fox-photo">
-                    <img src="../assets/2.jpg" alt="Alexandra">
+                    <img src="../assets/2.jpg">
                 </figure>
             </li>
             <li>
                 <figure class="fox-photo">
-                    <img src="../assets/3.jpg" alt="Alexandra">
+                    <img src="../assets/3.jpg">
                 </figure>
             </li>
             <li>
                 <figure class="fox-photo">
-                    <img src="../assets/4.jpg" alt="Alexandra">
+                    <img src="../assets/7.jpg">
                 </figure>
             </li>
         </ul>
-        <ul class="foxes-showcase second-showcase clearfix">
+        <ul class="foxes-showcase clearfix">
             <li>
                 <figure class="fox-photo">
-                    <img src="../assets/5.jpg" alt="Lisa">
+                    <img src="../assets/5.jpg">
                 </figure>
             </li>
             <li>
                 <figure class="fox-photo">
-                    <img src="../assets/6.jpg" alt="Tom">
+                    <img src="../assets/4.jpg">
                 </figure>
             </li>
             <li>
-                <figure class="fox-photo">
-                    <img src="../assets/7.jpg" alt="Tom">
+                <figure class="fox-photo second-showcase">
+                    <img src="../assets/6.jpg">
                 </figure>
             </li>
             <li>
-                <figure class="fox-photo">
-                    <img src="../assets/8.jpg" alt="Apoc">
+                <figure class="fox-photo second-showcase">
+                    <img src="../assets/8.jpg">
                 </figure>
             </li>
         </ul>

@@ -69,4 +69,10 @@ i{
     margin-right: 20px;
     color: #e67e22;
 }
+
+@media only screen and (max-width: 1023px){
+  .icon-small{
+    margin-right: 5px;
+  }
+}
 </style>

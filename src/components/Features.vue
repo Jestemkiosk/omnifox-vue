@@ -36,16 +36,19 @@ export default {
 
 <style scoped>
 .long-copy {
-  margin-bottom: 40px;
   letter-spacing: 1.15px;
   font-size: 1.05em;
   text-align: center;
   
 }
 
+
 @media only screen and (max-width: 767px){
     .info{
         display: none;
+    }
+    .long-copy{
+        margin-bottom: 0px;
     }
 }
 

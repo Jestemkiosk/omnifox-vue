@@ -226,10 +226,6 @@ nav .row{
     font-size: 0.8em;
   }
 
-  .top-btn a:hover{
-    color: #e67e22;
-  }
-
 }
 
 
@@ -257,10 +253,6 @@ nav .row{
     font-size: 0.8em;
   }
 
-  .top-btn{
-    font-size: 4em;
-  }
-
   .sticky{
     position: static;
   }
@@ -269,9 +261,10 @@ nav .row{
 /* Small phones: from 0 to 480px */
 @media only screen and (max-width: 480px){
 
-  .top-btn{
-    font-size: 2.5em;
-  }
+    .main-nav li{
+      margin-top: 15px;
+      font-size: 0.9em;
+    }
 
   .main-nav a:link,
   .main-nav a:visited{
