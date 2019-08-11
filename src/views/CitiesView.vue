@@ -57,7 +57,7 @@ export default {
 
 <style scoped>
 .cities{
-    margin: 50px 50px;
+    margin: 50px 0 50px 0px;
 }
 
 h1{
@@ -65,5 +65,11 @@ h1{
     text-align: center;
     font-size: 0.7em;
     margin: 20px;
+}
+
+@media only screen and (max-width: 1023px){
+  .cities{
+      margin: 0px;
+  }
 }
 </style>

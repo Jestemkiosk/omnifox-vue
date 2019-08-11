@@ -160,6 +160,7 @@ footer span{
     footer p{
       font-size: 0.6em;
     }
+
 }
 
 </style>

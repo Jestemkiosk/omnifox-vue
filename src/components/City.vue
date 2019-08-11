@@ -74,5 +74,17 @@ i{
   .icon-small{
     margin-right: 5px;
   }
+  h3 {
+    font-size: 0.75em;
+  }
+  li {
+    font-size: 0.5em;
+  }
+  .row{
+    margin: 0;
+  }
+  .city-box{
+    padding: 5px;
+  }
 }
 </style>

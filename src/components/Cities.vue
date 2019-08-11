@@ -53,9 +53,6 @@ a{
 
 /* Small tablet to big tablet: from 768px to 1023px */
 @media only screen and (max-width: 1023px){
-    .section-cities{
-    font-size: 0.55em;
-    }
 
     h4{
         font-size: 1.5em;
@@ -65,9 +62,6 @@ a{
         margin:0;
     }
 
-    .city-box{
-        padding:5px;
-    }
 }
 
 
